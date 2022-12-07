@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-bg-color : white;
+    --primary-color : black;
+    --hover-color : rgb(187, 185, 185);
+}
+
+body{
+    min-height: 300vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: var(--primary-color);
+    color: var(--primary-bg-color);
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+/*    expand btn ------------------------ */
+
+.expand-btn{
+    cursor: pointer;
+}
+
+.expand-btn:hover span{
+    background-color: var(--hover-color);
+
+}
+
+.expand-btn span{
+    display: block;
+    height: 3px;
+    width: 37px;
+    background-color: var(--primary-bg-color);
+    margin-bottom: .3em;
+}
+
+.expand-btn span:last-child{
+    margin-bottom: 0;
+}
+
+
+/*  nav links ----------------------------- */
+
+
+.nav-links-div{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.active-nav-links-div{
+    display: block;
+}
+
+.nav-links{
+    list-style-type: none;
+    background-color: var(--primary-color);
+    color: var(--primary-bg-color);
+    position: absolute;
+    height: 100%;
+    right: 0;
+    width: 10%;
+    min-width: 70px;
+    text-align: center;
+}
+
+.nav-link i{
+    padding: 1em;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+.nav-link i:hover{
+    color: var(--hover-color);
+}
+
+
+.nav-links .link-text{
+    position: absolute;
+    right: calc(100% + 1em);
+    color: var(--primary-bg-color);
+    font-weight: 600;
+}
+
+
+
